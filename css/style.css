@@ -1,0 +1,249 @@
+/* Configurações gerais */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #07111f;
+    color: #f2f2f2;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: #081a2e;
+    border-bottom: 1px solid #00bfff;
+    padding: 20px;
+}
+
+.cabecalho {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    color: #00bfff;
+}
+
+.cabecalho p {
+    margin-top: 5px;
+    color: #b8c7d9;
+}
+
+
+/* Menu */
+
+nav {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+
+/* Conteúdo */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    color: #00bfff;
+    margin-bottom: 25px;
+}
+
+
+/* Apresentação */
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto-apresentacao {
+    width: 55%;
+}
+
+.texto-apresentacao p {
+    color: #b8c7d9;
+    line-height: 1.6;
+}
+
+.foto {
+    width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #00bfff;
+}
+
+
+/* Botão */
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #00bfff;
+    color: #07111f;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: white;
+}
+
+
+/* Cards */
+
+.lista {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #0c2036;
+    border: 1px solid #173957;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.card h3 {
+    color: #00bfff;
+}
+
+.card p {
+    color: #b8c7d9;
+    line-height: 1.5;
+}
+
+.card a {
+    color: #00bfff;
+}
+
+
+/* Links */
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    border: 1px solid #00bfff;
+    border-radius: 8px;
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    background-color: #00bfff;
+    color: #07111f;
+}
+
+
+/* Página Sobre Mim */
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre p {
+    color: #b8c7d9;
+    line-height: 1.7;
+}
+
+.foto-sobre {
+    width: 280px;
+    border-radius: 15px;
+    border: 2px solid #00bfff;
+}
+
+
+/* Página de contato */
+
+.contato {
+    text-align: center;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.informacoes .card {
+    width: 280px;
+}
+
+
+/* Rodapé */
+
+footer {
+    margin-top: 30px;
+    padding: 25px;
+    text-align: center;
+    background-color: #081a2e;
+    border-top: 1px solid #173957;
+}
+
+footer p {
+    color: #b8c7d9;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    .apresentacao,
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-apresentacao {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}

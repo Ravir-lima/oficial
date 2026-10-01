@@ -148,6 +148,16 @@ h2 {
     color: #00bfff;
 }
 
+.card i {
+    font-size: 50px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* Links */
 

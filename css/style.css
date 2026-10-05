@@ -125,6 +125,7 @@ h2 {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -146,6 +147,7 @@ h2 {
 
 .card a {
     color: #00bfff;
+    text-decoration: none;
 }
 
 .card i {
